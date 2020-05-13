@@ -17,7 +17,7 @@ export default class FilterString extends Component {
         let filteredNames = []
 
         for (let i=0; i<names.length; i++){
-            if(names[i].includes(userInput)){
+            if(names[i].toLowerCase().includes(userInput.toLowerCase())){
                 filteredNames.push(names[i])
             }
         }
